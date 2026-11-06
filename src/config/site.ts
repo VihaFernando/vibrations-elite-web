@@ -1,7 +1,7 @@
 /**
  * Business configuration. This is the single place to update company details.
  *
- * TODO(business owner): fill in every empty value below.
+ * TODO(business owner): fill in any empty values below.
  * - Empty contact values stay hidden on the site.
  * - Once filled in, they appear as working links and are added to the structured data.
  * - Social links stay hidden until a URL is provided.
@@ -26,10 +26,9 @@ export const site = {
     mapQuery: '119 Kandana - Ganemulla Rd, Kandana, Sri Lanka',
   },
   contact: {
-    /** International format for display and links, e.g. '+94 11 234 5678'. */
-    phone: '' as string,
-    /** e.g. 'info@vibrationselite.com' */
-    email: '' as string,
+    /** International format, shown as written. */
+    phones: ['+94 76 980 9991', '+94 76 842 8460'] as string[],
+    email: 'nishikadilukshi84@gmail.com' as string,
     /** International format, e.g. '+94 77 123 4567'. */
     whatsapp: '' as string,
   },
@@ -54,10 +53,12 @@ export const site = {
 
 const mapQuery = encodeURIComponent(site.address.mapQuery);
 
+/** Turns a displayed number into a tap-to-call link. */
+export const telLink = (phone: string) => `tel:${phone.replace(/[^+\d]/g, '')}`;
+
 export const links = {
   mapsSearch: `https://www.google.com/maps/search/?api=1&query=${mapQuery}`,
   mapsEmbed: `https://www.google.com/maps?q=${mapQuery}&output=embed`,
-  phone: site.contact.phone ? `tel:${site.contact.phone.replace(/[^+\d]/g, '')}` : '',
   email: site.contact.email ? `mailto:${site.contact.email}` : '',
   whatsapp: site.contact.whatsapp ? `https://wa.me/${site.contact.whatsapp.replace(/\D/g, '')}` : '',
 };

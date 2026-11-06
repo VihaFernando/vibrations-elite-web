@@ -21,7 +21,7 @@ Upload the contents of `dist/` to any static host. `public/.htaccess` handles cl
 
 | Item | Where | Notes |
 | --- | --- | --- |
-| Phone, email and WhatsApp | `contact` in `src/config/site.ts` | Hidden until filled |
+| WhatsApp | `contact.whatsapp` in `src/config/site.ts` | Hidden until filled. Phone numbers and email are already set |
 | Social links | `social` in `src/config/site.ts` | Hidden until filled |
 | Confirm brands | `brandsConfirmed` in `src/config/site.ts` | Set to `true` only once the owner confirms the business deals in these brands. This changes the Brands wording to "Brands we offer". The Home hero says "from the world's leading brands" and "Visit Our Store" regardless, so confirm those are accurate |
 | Map pin | `address.mapQuery` in `src/config/site.ts` | Check the pin matches the real premises. Google resolves the printed address to the wrong area, so this uses Google's road name instead |

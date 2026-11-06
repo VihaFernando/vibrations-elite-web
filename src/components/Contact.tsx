@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { links, site } from '../config/site';
+import { links, site, telLink } from '../config/site';
 
 export function ContactValue({ value, href }: { value: string; href: string }) {
   return (
@@ -11,7 +11,7 @@ export function ContactValue({ value, href }: { value: string; href: string }) {
 
 /** Only details that have been filled in appear on the site. */
 export const contactRows: { label: string; node: ReactNode }[] = [
-  { label: 'Phone', value: site.contact.phone, href: links.phone },
+  ...site.contact.phones.map((phone) => ({ label: `Phone ${phone}`, value: phone, href: telLink(phone) })),
   { label: 'Email', value: site.contact.email, href: links.email },
   { label: 'WhatsApp', value: site.contact.whatsapp, href: links.whatsapp },
 ]

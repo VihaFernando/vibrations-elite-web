@@ -29,7 +29,7 @@ export const structuredData = {
     addressCountry: site.address.countryCode,
   },
   hasMap: links.mapsSearch,
-  ...(site.contact.phone ? { telephone: site.contact.phone } : {}),
+  ...(site.contact.phones.length ? { telephone: site.contact.phones } : {}),
   ...(site.contact.email ? { email: site.contact.email } : {}),
   ...(Object.values(site.social).some(Boolean) ? { sameAs: Object.values(site.social).filter(Boolean) } : {}),
 };

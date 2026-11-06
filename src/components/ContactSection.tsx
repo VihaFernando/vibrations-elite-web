@@ -1,9 +1,9 @@
 import { ExternalLink, Mail, MessageCircle, Phone } from 'lucide-react';
-import { links, site } from '../config/site';
+import { links, site, telLink } from '../config/site';
 import { Address, ContactValue } from './Contact';
 
 const rows = [
-  { icon: Phone, label: 'Phone', value: site.contact.phone, href: links.phone },
+  ...site.contact.phones.map((phone) => ({ icon: Phone, label: `Phone ${phone}`, value: phone, href: telLink(phone) })),
   { icon: Mail, label: 'Email', value: site.contact.email, href: links.email },
   { icon: MessageCircle, label: 'WhatsApp', value: site.contact.whatsapp, href: links.whatsapp },
 ].filter((row) => row.value);
