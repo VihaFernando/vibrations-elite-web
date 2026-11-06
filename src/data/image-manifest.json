@@ -1,0 +1,220 @@
+{
+  "iphone-on-stone": {
+    "width": 1774,
+    "height": 887,
+    "widths": [
+      640,
+      1000,
+      1500,
+      1774
+    ]
+  },
+  "iphone-16-pro": {
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      640,
+      1000,
+      1500,
+      2200
+    ]
+  },
+  "samsung-galaxy": {
+    "width": 2400,
+    "height": 1640,
+    "widths": [
+      640,
+      1000,
+      1500,
+      2200
+    ]
+  },
+  "samsung-z-fold": {
+    "width": 1079,
+    "height": 1349,
+    "widths": [
+      640,
+      1000,
+      1079
+    ]
+  },
+  "xiaomi-15-ultra": {
+    "width": 2400,
+    "height": 2400,
+    "widths": [
+      640,
+      1000,
+      1500,
+      2200
+    ]
+  },
+  "oneplus-8-pro": {
+    "width": 2400,
+    "height": 2400,
+    "widths": [
+      640,
+      1000,
+      1500,
+      2200
+    ]
+  },
+  "redmi-note-10-pro": {
+    "width": 2400,
+    "height": 2400,
+    "widths": [
+      640,
+      1000,
+      1500,
+      2200
+    ]
+  },
+  "phones-on-display": {
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      640,
+      1000,
+      1500,
+      2200
+    ]
+  },
+  "airpods-pro": {
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      640,
+      1000,
+      1500,
+      2200
+    ]
+  },
+  "galaxy-buds": {
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      640,
+      1000,
+      1500,
+      2200
+    ]
+  },
+  "soundpeats-t3-pro": {
+    "width": 1152,
+    "height": 768,
+    "widths": [
+      640,
+      1000,
+      1152
+    ]
+  },
+  "soundcore-space-one": {
+    "width": 1800,
+    "height": 1200,
+    "widths": [
+      640,
+      1000,
+      1500,
+      1800
+    ]
+  },
+  "sony-headphones": {
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      640,
+      1000,
+      1500,
+      2200
+    ]
+  },
+  "jbl-headphones": {
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      640,
+      1000,
+      1500,
+      2200
+    ]
+  },
+  "baseus-70w-gan": {
+    "width": 2400,
+    "height": 3000,
+    "widths": [
+      640,
+      1000,
+      1500,
+      2200
+    ]
+  },
+  "magsafe-charger": {
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      640,
+      1000,
+      1500,
+      2200
+    ]
+  },
+  "anker-power-bank": {
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      640,
+      1000,
+      1500,
+      2200
+    ]
+  },
+  "usb-cable": {
+    "width": 2400,
+    "height": 3000,
+    "widths": [
+      640,
+      1000,
+      1500,
+      2200
+    ]
+  },
+  "iphone-leather-case": {
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      640,
+      1000,
+      1500,
+      2200
+    ]
+  },
+  "folio-cases": {
+    "width": 1920,
+    "height": 2400,
+    "widths": [
+      640,
+      1000,
+      1500,
+      1920
+    ]
+  },
+  "apple-watch-ultra": {
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      640,
+      1000,
+      1500,
+      2200
+    ]
+  },
+  "galaxy-watch": {
+    "width": 2400,
+    "height": 1600,
+    "widths": [
+      640,
+      1000,
+      1500,
+      2200
+    ]
+  }
+}

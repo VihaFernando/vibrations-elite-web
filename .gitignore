@@ -1,0 +1,22 @@
+# Dependencies and build output
+node_modules/
+dist/
+dist-ssr/
+
+# Secrets and local settings
+.env
+.env.*
+!.env.example
+
+# Reference screenshots of third-party sites stay local
+design-references/
+
+# Tooling and OS files
+.claude/
+.vscode/
+.idea/
+*.log
+*.local
+.DS_Store
+Thumbs.db
+__pycache__/

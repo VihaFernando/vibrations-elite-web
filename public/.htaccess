@@ -1,0 +1,8 @@
+# For Apache and cPanel hosting: serve clean URLs and the custom 404 page.
+Options -Indexes -MultiViews
+DirectorySlash Off
+RewriteEngine On
+RewriteRule ^(.+)/$ /$1 [R=301,L]
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L]
+ErrorDocument 404 /404.html
