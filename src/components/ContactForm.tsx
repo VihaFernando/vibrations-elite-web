@@ -63,6 +63,7 @@ export function ContactForm() {
 
     if (!site.contactFormEndpoint) {
       setStatus('not-configured');
+      if (mailto) window.location.href = mailto;
       return;
     }
 
@@ -119,8 +120,8 @@ export function ContactForm() {
   };
 
   const mailto = links.email
-    ? `${links.email}?subject=${encodeURIComponent(values.subject)}&body=${encodeURIComponent(
-        `${values.message}\n\n${values.name}\n${values.email}`,
+    ? `${links.email}?subject=${encodeURIComponent(values.subject.trim())}&body=${encodeURIComponent(
+        `${values.message.trim()}\r\n\r\n${values.name.trim()}\r\n${values.email.trim()}`,
       )}`
     : '';
 
@@ -142,15 +143,23 @@ export function ContactForm() {
 
       <div aria-live="polite">
         {status === 'not-configured' && (
-          <div className="rounded-lg border border-danger/30 bg-danger/5 p-4 text-[0.975rem] text-danger">
-            <p className="font-semibold">Your message could not be sent.</p>
-            <p className="mt-1">
-              {mailto ? 'Please send it to us by email instead.' : 'Please contact us directly using the details on this page.'}
-            </p>
-            {mailto && (
-              <a href={mailto} className="mt-2 inline-block font-semibold underline underline-offset-4">
-                Open in your email app
-              </a>
+          <div className="rounded-lg border border-line bg-mist p-4 text-[0.975rem]">
+            {mailto ? (
+              <>
+                <p className="font-semibold">Your email is ready to send.</p>
+                <p className="mt-1 text-slate">
+                  We have opened your email app with your message filled in. Press Send there to finish. If nothing
+                  opened, use the button below.
+                </p>
+                <a href={mailto} className="mt-2 inline-block font-semibold text-accent underline underline-offset-4">
+                  Open my email app again
+                </a>
+              </>
+            ) : (
+              <>
+                <p className="font-semibold">Your message could not be sent.</p>
+                <p className="mt-1 text-slate">Please contact us directly using the details on this page.</p>
+              </>
             )}
           </div>
         )}

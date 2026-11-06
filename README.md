@@ -33,7 +33,7 @@ Also check that the site copy suits the business, especially the About page and 
 
 ## Contact form
 
-The form validates input but has no delivery service yet. Until one is connected, every valid submission shows **"Your message could not be sent"**, so visitors cannot reach you through it.
+The form validates input but has no delivery service yet. Until one is connected, a valid submission opens the visitor's email app with their message filled in, addressed to the email in `src/config/site.ts`. The visitor still has to press Send, so some enquiries will be lost. A form service avoids this.
 
 To connect it, copy `.env.example` to `.env` and set `VITE_CONTACT_FORM_ENDPOINT` to a form service or API that accepts a JSON POST with `name`, `email`, `subject` and `message`. Then rebuild.
 
